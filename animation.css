@@ -1,0 +1,134 @@
+.home-title,
+.info-text,
+.question-ani {
+    animation-name: appearing;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.home-hr,
+.info-hr,
+.qna-hr {
+    animation-name: side-appearing;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+.home-description,
+.user-info,
+.answer-ani {
+    animation-name: top-appearing;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+.home-button,
+.submit-button {
+    animation-name: appearing;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
+
+.firstq {
+    animation: firstq;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.secondq {
+    animation: secondq;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.thirdq {
+    animation: thirdq;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.fourthq {
+    animation: fourthq;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.fifthq {
+    animation: fifthq;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.loading-bar {
+    animation-name: twink;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes appearing {
+    from {opacity: 0;
+    }
+    to {opacity: 1;
+    }
+}
+
+@keyframes side-appearing {
+    from {width: 0;
+        opacity: 0;
+    }
+    to {width: 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes top-appearing {
+    from {position: relative;
+        top: -20px;
+        opacity: 0;
+    }
+    to {position: relative;
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes firstq {
+    from {width: 0;}
+    to {width: 80px;}
+}
+
+@keyframes secondq {
+    from {width: 80px;}
+    to {width: 160px;}
+}
+
+@keyframes thirdq {
+    from {width: 160px;}
+    to {width: 240px;}
+}
+
+@keyframes fourthq {
+    from {width: 240px;}
+    to {width: 320px;}
+}
+
+@keyframes fifthq {
+    from {width: 320px;}
+    to {width: 400px;}
+}
+
+@keyframes twink {
+    50% {opacity: 0.3;}
+}

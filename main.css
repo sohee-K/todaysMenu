@@ -1,0 +1,146 @@
+body {
+    margin-left: auto; margin-right: auto;
+    margin-top: 0;
+    background: linear-gradient(
+        to right bottom, orange, pink
+    );
+    background: -webkit-linear-gradient(
+        to right bottom, orange, pink
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+
+hr {
+    border-top: 3px double white;
+}
+
+li {
+    list-style: none;
+}
+
+.footer {
+    width: auto;
+    height: 50px;
+    border-top: 1px dotted white;
+    color: white;
+}
+
+.main {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 25px; margin-right: 25px;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.home-title,
+.home-description,
+.home-button {
+    margin-bottom: 50px;
+    line-height: 23px;
+}
+
+.home-title,
+.info-text {
+    color: #FFEBCD;
+    text-shadow: 3px 3px 3px orange;
+}
+
+.info-text {
+    margin-bottom: 30px;
+}
+
+.user-info {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 50px;
+    line-height: 35px;
+    text-align: initial;
+}
+
+.home-button,
+.submit-button {
+    background-color: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.submit-button {
+    font-size: 15px;
+}
+
+.qna-status-bar,
+.qna-status-bar-inner {
+    position: absolute;
+    top: 65px;
+    margin-left: auto; margin-right: auto;
+    padding: 0px;
+    height: 16px;
+    border-radius: 8px;
+    border: 1px solid #FFEBCD;
+    background-color: transparent;
+}
+
+.qna-status-bar {
+    width: 400px;
+}
+
+.firstq, 
+.secondq, 
+.thirdq, 
+.fourthq, 
+.fifthq {
+    width: 0px;
+    background-color: white;
+}
+
+.question {
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: initial;
+    margin-bottom: 20px;
+    margin-left: auto; margin-right: auto;
+}
+
+.answer {
+    margin-top: 40px;
+}
+
+.answer-box {
+    font-size: large;
+    font-weight: bold;
+    color: orange;
+    background-color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 340px;
+    height: 55px;   
+    margin-bottom: 25px;
+    margin-left: auto; margin-right: auto;
+    word-wrap: break-word;
+}
+
+.loading-bar {
+    color: #FFEBCD;
+    font-size: x-large;
+    letter-spacing: 16px;
+    margin-top: 160px; 
+}
+
+.loading-text {
+    margin-top: 100px;
+    margin-bottom: 160px;
+}

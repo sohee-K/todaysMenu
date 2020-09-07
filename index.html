@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>오늘의 메뉴 추천</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="권소희, 김승범">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet", href="main.css"/>
+    <link rel="stylesheet", media="screen", href="screen.css"/>
+    <link rel="stylesheet", href="animation.css"/>
+</head>
+<body>
+    <!--메인 페이지-->
+    <div class="main">
+        <!--홈 페이지-->
+        <section class="home js-home">
+            <h1 class="home-title js-home-title">
+            </h1>
+            <hr class="home-hr">
+            <p class="home-description">
+                당신의 운세와 간단한<br>
+                심리테스트를 기반으로<br>
+                오늘 당신에게 어울리는<br>
+                메뉴를 추천해드립니다.
+            </p>
+            <input class="home-button js-home-button" type="button" value="시작하기">
+        </section>
+
+        <!--정보 입력 페이지-->
+        <section class="info js-info">
+            <h3 class="info-text">당신의 정보를 입력해주세요.</h3>
+            <hr class="info-hr">
+            <form class="user-info js-user-info" method="POST">
+                생년월일: <input type="number" name="year" min="1900" max="2020" size="4" required placeholder="예)1998">년
+                        <input type="number" name="month" min="1" max="12" size="2" required>월
+                        <input type="number" name="day" min="1" max="31" size="2" required>일<br>
+                <input type="radio" name="calender" value="solar" checked>양력
+                <input type="radio" name="calender" value="lunar">음력<br>
+                태어난 시간: <select name="time">
+                                <option value="23-1">자시 (23:00-00:59)</option>
+                                <option value="1-3">축시 (01:00-02:59)</option>
+                                <option value="3-5">인시 (03:00-04:59)</option>
+                                <option value="5-7">묘시 (05:00-06:59)</option>
+                                <option value="7-9">진시 (07:00-08:59)</option>
+                                <option value="9-11">사시 (09:00-10:59)</option>
+                                <option value="11-13">오시 (11:00-12:59)</option>
+                                <option value="13-15">미시 (13:00-14:59)</option>
+                                <option value="15-17">신시 (15:00-16:59)</option>
+                                <option value="17-19">유시 (17:00-18:59)</option>
+                                <option value="19-21">술시 (19:00-20:59)</option>
+                                <option value="21-23">해시 (21:00-22:59)</option>
+                            </select><br>
+                이름(또는 닉네임): <input type="text" name="userName" size="10">님<br>
+                <input type="radio" name="gender" value="male">남성
+                <input type="radio" name="gender" value="female">여성<br><br>
+                <input class="submit-button" type="submit" value="다음 단계로">
+            </form>
+        </section>
+
+        <!--심리테스트 페이지-->
+        <section class="qna js-qna">
+            <div class="qna-status-bar">
+            </div>
+            <div class="qna-status-bar-inner js-bar-inner">
+            </div>
+            <div class="question js-question">
+                질문이 들어갈 위치
+            </div>
+            <hr>
+            <div class="answer js-answer">
+            </div>
+        </section>
+
+        <!--로딩 페이지-->
+        <section class="loading js-loading">
+            <div class="loading-bar">
+                loading...
+            </div>
+            <p class="loading-text">
+                오늘 당신의 운세에 맞는<br>
+                메뉴를 추천해드릴게요!<br><br>
+                잠시만 기다려주세요
+            </p>
+        </section>
+
+        <!--결과 페이지-->
+        <section class="result js-result">
+        </section>
+    </div>
+
+    <div class="footer js-footer">
+        <p>ⓒ 2020. 권소희 김승범 All Rights Reserved</p>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
