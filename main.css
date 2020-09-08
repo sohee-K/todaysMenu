@@ -17,12 +17,12 @@ body {
 }
 
 input[name="year"] {
-    width: 70px;
+    width: 50px;
 }
 
 input[name="month"],
 input[name="day"] {
-    width: 40px;
+    width: 30px;
 }
 
 hr {
@@ -120,7 +120,7 @@ ol {
 }
 
 .question {
-    font-size: 14pt;
+    font-size: 15pt;
     font-weight: bold;
     text-align: initial;
     margin-bottom: 20px;
