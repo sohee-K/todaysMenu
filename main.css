@@ -16,12 +16,23 @@ body {
     height: auto;
 }
 
+input[name = "year"] {
+    width: 40px;
+}
+
+input[name = "month"],
+input[name = "day"] {
+    width: 20px;
+}
+
 hr {
     border-top: 3px double white;
 }
 
-li {
+ol {
+    margin: 0 auto;
     list-style: none;
+    list-style-position: outside;
 }
 
 .footer {
@@ -33,7 +44,7 @@ li {
 
 .main {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     margin-left: 25px; margin-right: 25px;
     color: white;
 }
@@ -94,7 +105,7 @@ li {
 }
 
 .qna-status-bar {
-    width: 350px;
+    width: 300px;
 }
 
 .firstq, 
@@ -107,7 +118,7 @@ li {
 }
 
 .question {
-    font-size: 15pt;
+    font-size: 14pt;
     font-weight: bold;
     text-align: initial;
     margin-bottom: 20px;
@@ -128,7 +139,7 @@ li {
     text-align: center;
     width: 300px;
     height: 55px;   
-    margin-left: auto; margin-right: auto;
+    margin-bottom: 25px;
     word-wrap: break-word;
 }
 

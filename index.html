@@ -31,9 +31,9 @@
             <h3 class="info-text">당신의 정보를 입력해주세요.</h3>
             <hr class="info-hr">
             <form class="user-info js-user-info" method="POST">
-                생년월일: <input type="number" name="year" min="1900" max="2020" size="8" required placeholder="예)1998">년
-                        <input type="number" name="month" min="1" max="12" size="4" required>월
-                        <input type="number" name="day" min="1" max="31" size="4" required>일<br>
+                생년월일: <input type="number" name="year" min="1900" max="2020" required placeholder="예)1998">년
+                        <input type="number" name="month" min="1" max="12" required>월
+                        <input type="number" name="day" min="1" max="31" required>일<br>
                 <input type="radio" name="calender" value="solar" checked>양력
                 <input type="radio" name="calender" value="lunar">음력<br>
                 태어난 시간: <select name="time">
@@ -50,7 +50,7 @@
                                 <option value="19-21">술시 (19:00-20:59)</option>
                                 <option value="21-23">해시 (21:00-22:59)</option>
                             </select><br>
-                이름(또는 닉네임): <input type="text" name="userName" size="10">님<br>
+                이름(또는 닉네임): <input type="text" name="userName" size="12">님<br>
                 <input type="radio" name="gender" value="male">남성
                 <input type="radio" name="gender" value="female">여성<br><br>
                 <input class="submit-button" type="submit" value="다음 단계로">
