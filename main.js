@@ -30,8 +30,7 @@ let currentIndex = 0;
 
 function handleReplayClick(event) {
     event.preventDefault();
-    result.classList.add(HIDE_CN);
-    home.classList.remove(HIDE_CN);
+    window.location.reload();
 }
 
 // 추후 수정할 부분
