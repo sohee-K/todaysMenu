@@ -62,13 +62,28 @@
     animation-fill-mode: backwards;
 }
 
-.result-replay,
-.result-share {
-    animation-name: top-appearing;
-    animation-duration: 0.5s;
+.result-replay-button,
+.result-sns-text {
+    animation-name: appearing;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-fill-mode: backwards;
+}
+
+.result-sns-list {
+    animation-name: top-appearing;
+    animation-timing-function: linear;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+}
+
+.result-replay-button {
+    animation-duration: 1s;
+}
+
+.result-sns-text,
+.result-sns-list {
+    animation-duration: 0.5s;
 }
 
 .firstq {
