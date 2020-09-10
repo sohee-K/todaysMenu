@@ -175,12 +175,13 @@ table {
     margin: 20px auto;
 }
 
-td {
+.result-sns-text {
     text-align: right;
+    padding-right: 8px;
 }
 
 .result-sns-list {
-    padding-right: 17px;
+    padding: 0 auto;
 }
 
 .result-sns-list li {
