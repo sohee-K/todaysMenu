@@ -43,7 +43,7 @@ ol {
 }
 
 .main {
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 25px; margin-right: 25px;
     color: white;
@@ -51,6 +51,11 @@ ol {
 
 .hide {
     display: none;
+}
+
+.home-title,
+.info-text {
+    padding-top: 50px;
 }
 
 .home-title,
@@ -99,7 +104,7 @@ ol {
 .qna-status-bar,
 .qna-status-bar-inner {
     position: absolute;
-    top: 65px;
+    top: 35px;
     margin-left: auto; margin-right: auto;
     padding: 0px;
     height: 16px;
@@ -122,6 +127,7 @@ ol {
 }
 
 .question {
+    padding-top: 15px;
     font-size: 15pt;
     font-weight: bold;
     text-align: initial;
