@@ -179,14 +179,21 @@ td {
     text-align: right;
 }
 
+.result-sns-list {
+    padding-right: 17px;
+}
+
 .result-sns-list li {
     display: inline;
     list-style: none;
 }
 
-.instagram,
 .facebook,
 .twitter {
     width: 60px;
     height: 60px;
+}
+
+a {
+    text-decoration:none;
 }

@@ -3,8 +3,14 @@
 <head>
     <title>오늘의 메뉴 추천</title>
     <meta charset="utf-8"/>
-    <meta name="author" content="권소희, 김승범">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="권소희, 김승범"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta property="og:url" content="https://sohee-K.github.io/todaysmenu"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="오늘의 메뉴 추천"/>
+    <meta property="og:description" content="오늘의 운세와 간단한 심리테스트를 기반으로 당신에게 어울리는 메뉴를 추천해드립니다."/>
+    <meta property="og:image" content="images/thumbnail.png"/>
+    <meta property="fb:app_id" content="APP_ID"/>
     <link rel="stylesheet", href="main.css"/>
     <link rel="stylesheet", href="animation.css"/>
 </head>
@@ -96,23 +102,18 @@
                     <td rowspan="2">
                         <input class="result-replay-button js-result-replay-button" type="button" value="다시하기">
                     </td>
-                    <td class="result-sns-text">▼ 결과 sns에 공유하기 ▼</td>
+                    <td class="result-sns-text">▼ sns에 공유하기 ▼</td>
                 </tr>
                 <tr>
                     <td>
                         <ul class="result-sns-list">
                             <li>
-                                <a href="#" target="_parent">
-                                    <img class="instagram" src="images/instagram.png" alt="instagram">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_parent">
+                                <a href="javascript:void(0);" onclick="shareSNS('facebook'); return false;" target="_blank">
                                     <img class="facebook" src="images/facebook.png" alt="facebook">
                                 </a>
                             </li>
                             <li>
-                                <a href="#" target="_parent">
+                                <a href="javascript:void(0);" onclick="shareSNS('twitter'); return false;" target="_blank">
                                     <img class="twitter" src="images/twitter.png" alt="twitter">
                                 </a>
                             </li>
@@ -130,5 +131,6 @@
 
     <script src="data.js"></script>
     <script src="main.js"></script>
+    <script src="share.js"></script>
 </body>
 </html>
