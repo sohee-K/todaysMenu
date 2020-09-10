@@ -35,6 +35,18 @@ ol {
     list-style: none;
 }
 
+ul {
+    width: 200px;
+    text-align: left;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    color: orange;
+    border-style: double;
+    border-color: orange;
+    border-width: 5px;
+}
+
 .footer {
     width: auto;
     height: 50px;
@@ -179,6 +191,7 @@ ol {
 
 table {
     margin: 20px auto;
+    width: 350px;
 }
 
 .result-sns-list {

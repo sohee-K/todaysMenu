@@ -54,7 +54,8 @@
     animation-delay: 2s;
 }
 
-.result-explanation {
+.result-explanation,
+.result-resto {
     animation-name: top-appearing;
     animation-duration: 0.5s;
     animation-timing-function: linear;

@@ -14,6 +14,7 @@ const home = document.querySelector(".js-home"),
     resultImg = result.querySelector(".js-result-img"),
     resultName = result.querySelector(".js-result-name"),
     resultEx = result.querySelector(".js-result-explanation"),
+    resultResto = result.querySelector(".js-result-resto"),
     resultReplayButton = result.querySelector(".js-result-replay-button"),
     footer = document.querySelector(".js-footer");
 
@@ -34,6 +35,16 @@ function handleReplayClick(event) {
 }
 
 // 추후 수정할 부분
+function addResultResto() {
+    const ul = document.createElement("ul");
+    for (let i = 0; i < 3; i++) {
+        let li = document.createElement("li");
+        li.innerText = "식당이름" + i + "   주소링크";
+        ul.appendChild(li);
+    }
+    resultResto.appendChild(ul);
+} 
+
 function addResultName() {
     resultName.innerHTML = `초밥`;
     resultEx.innerHTML = `초밥을 추천한 이유에 대한 설명. 
@@ -55,6 +66,7 @@ function resultEvent() {
 
     addResultImg();
     addResultName();
+    addResultResto();
     resultReplayButton.addEventListener("click", handleReplayClick);
 }
 
