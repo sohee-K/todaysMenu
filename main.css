@@ -45,6 +45,7 @@ ul {
     border-style: double;
     border-color: orange;
     border-width: 5px;
+    list-style-position: inside;
 }
 
 .footer {

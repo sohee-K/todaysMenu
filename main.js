@@ -39,7 +39,7 @@ function addResultResto() {
     const ul = document.createElement("ul");
     for (let i = 0; i < 3; i++) {
         let li = document.createElement("li");
-        li.innerText = "식당이름" + i + "   주소링크";
+        li.innerText = "식당이름" + i + " | 주소링크";
         ul.appendChild(li);
     }
     resultResto.appendChild(ul);
