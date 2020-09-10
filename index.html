@@ -49,7 +49,7 @@
                                 <option value="19-21">술시 (19:00-20:59)</option>
                                 <option value="21-23">해시 (21:00-22:59)</option>
                             </select><br>
-                이름(또는 닉네임): <input type="text" name="userName" size="12">님<br>
+                이름(또는 닉네임): <input type="text" name="userName" size="12" value="익명">님<br>
                 <input type="radio" name="gender" value="male">남성
                 <input type="radio" name="gender" value="female">여성<br><br>
                 <input class="submit-button" type="submit" value="다음 단계로">
@@ -84,6 +84,43 @@
 
         <!--결과 페이지-->
         <section class="result js-result">
+            <h4 class="result-text js-result-text"></h4>
+            <div class="result-img js-result-img"></div>
+            <h1 class="result-name js-result-name"></h1>
+            <hr class="result-hr1">
+            <div class="result-explanation js-result-explanation"></div>
+            <hr class="result-hr2">
+            <div>
+                <table>
+                <tr>
+                    <td rowspan="2">
+                        <input class="result-replay-button js-result-replay-button" type="button" value="다시하기">
+                    </td>
+                    <td>▼ 결과 sns에 공유하기 ▼</td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul class="sns-list">
+                            <li>
+                                <a href="#" target="_parent">
+                                    <img class="instagram" src="images/instagram.png" alt="instagram">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_parent">
+                                    <img class="facebook" src="images/facebook.png" alt="facebook">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_parent">
+                                    <img class="twitter" src="images/twitter.png" alt="twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                </table>
+            </div>
         </section>
     </div>
 

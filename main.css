@@ -61,7 +61,8 @@ ol {
 }
 
 .home-title,
-.info-text {
+.info-text,
+.result-name {
     color: #FFEBCD;
     text-shadow: 3px 3px 3px orange;
 }
@@ -80,7 +81,8 @@ ol {
 }
 
 .home-button,
-.submit-button {
+.submit-button,
+.result-replay-button {
     margin: 0 auto;
     background-color: transparent;
     padding: 10px;
@@ -155,4 +157,36 @@ ol {
 .loading-text {
     margin-top: 100px;
     margin-bottom: 160px;
+}
+
+.result-text {
+    text-align: left;
+}
+
+.result-img {
+    margin: 15px auto;
+}
+
+.result-explanation {
+    margin: 25px auto;
+}
+
+table {
+    margin: 20px auto;
+}
+
+td {
+    text-align: right;
+}
+
+.sns-list li {
+    display: inline;
+    list-style: none;
+}
+
+.instagram,
+.facebook,
+.twitter {
+    width: 60px;
+    height: 60px;
 }

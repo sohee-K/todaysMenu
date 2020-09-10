@@ -2,7 +2,7 @@
 .info-text,
 .question-ani {
     animation-name: appearing;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: linear;
 }
 
@@ -10,62 +10,98 @@
 .info-hr,
 .qna-hr {
     animation-name: side-appearing;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: backwards;
 }
 
 .home-description,
 .user-info,
-.answer-ani {
+.answer-ani,
+.result-text {
     animation-name: top-appearing;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.home-button,
+.submit-button,
+.result-img,
+.result-name {
+    animation-name: appearing;
     animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+}
+
+.result-hr1,
+.result-hr2 {
+    animation-name: side-appearing;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: backwards;
+}
+
+.result-hr1 {
+    animation-delay: 1.5s;
+}
+
+.result-hr2 {
+    animation-delay: 2s;
+}
+
+.result-explanation {
+    animation-name: top-appearing;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.result-replay,
+.result-share {
+    animation-name: top-appearing;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 2s;
     animation-fill-mode: backwards;
 }
 
-.home-button,
-.submit-button {
-    animation-name: appearing;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-delay: 3s;
-    animation-fill-mode: backwards;
-}
-
 .firstq {
     animation: firstq;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
 .secondq {
     animation: secondq;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
 .thirdq {
     animation: thirdq;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
 .fourthq {
     animation: fourthq;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
 
 .fifthq {
     animation: fifthq;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -73,7 +109,7 @@
 .loading-bar {
     animation-name: twink;
     animation-iteration-count: infinite;
-    animation-duration: 1s;
+    animation-duration: 0.75s;
     animation-fill-mode: forwards;
 }
 

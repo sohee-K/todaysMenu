@@ -10,6 +10,11 @@ const home = document.querySelector(".js-home"),
     qnaHR = qna.querySelector("hr"),
     loading = document.querySelector(".js-loading"),
     result = document.querySelector(".js-result"),
+    resultText = result.querySelector(".js-result-text"),
+    resultImg = result.querySelector(".js-result-img"),
+    resultName = result.querySelector(".js-result-name"),
+    resultEx = result.querySelector(".js-result-explanation"),
+    resultReplayButton = result.querySelector(".js-result-replay-button"),
     footer = document.querySelector(".js-footer");
 
 const HIDE_CN = "hide";
@@ -22,10 +27,35 @@ const USER_ANSWER = "userAnswer";
 let userAnswerList = [];
 let currentIndex = 0;
 
+function handleReplayClick(event) {
+    event.preventDefault();
+    result.classList.add(HIDE_CN);
+    home.classList.remove(HIDE_CN);
+}
+
+// 추후 수정할 부분
+function addResultName() {
+    resultName.innerHTML = `초밥`;
+    resultEx.innerHTML = `초밥을 추천한 이유에 대한 설명. 
+    오늘의 운세 결과에 가장 부합하는 음식재료와 사용자의 심리테스트 결과를 조합하여 가장 적절한 메뉴 추천.`;
+}
+
+function addResultImg() {
+    let image = document.createElement("img");
+    image.setAttribute("src", "images/sushi.png");
+    image.setAttribute("height" ,"180");
+    image.setAttribute("width", "200");
+    resultImg.appendChild(image);
+}
+// 여기까지
+
 function resultEvent() {
-    const userResult = document.createElement("div");
-    result.appendChild(userResult);
-    userResult.innerText = `결과 표시할 위치`;
+    const userName = JSON.parse(localStorage.getItem(USER_INFO)).name;
+    resultText.innerHTML = `오늘 ${userName}님에게 추천하는 음식은...`;
+
+    addResultImg();
+    addResultName();
+    resultReplayButton.addEventListener("click", handleReplayClick);
 }
 
 function loaded() {
@@ -35,7 +65,7 @@ function loaded() {
 }
 
 function loadingEvent() {
-    setTimeout(loaded, 3000);
+    setTimeout(loaded, 1500);
 }
 
 function clearAnswer(ol) {
@@ -139,7 +169,7 @@ function infoEvent() {
     userInfo.addEventListener("submit", handleSubmit);
 }
 
-function handleClick(event) {
+function handleHomeClick(event) {
     event.preventDefault();
     home.classList.add(HIDE_CN);
     info.classList.remove(HIDE_CN);
@@ -164,7 +194,7 @@ function hideOtherSec() {
 function homeEvent() {
     hideOtherSec();
     titleText();
-    homeButton.addEventListener("click", handleClick);
+    homeButton.addEventListener("click", handleHomeClick);
 }
 
 function init() {
