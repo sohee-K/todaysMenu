@@ -44,7 +44,7 @@ ol {
 
 .main {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-left: 25px; margin-right: 25px;
     color: white;
 }
@@ -128,7 +128,7 @@ ol {
 
 .question {
     padding-top: 15px;
-    font-size: 15pt;
+    font-size: 14pt;
     font-weight: bold;
     text-align: initial;
     margin-bottom: 20px;
@@ -179,11 +179,6 @@ ol {
 
 table {
     margin: 20px auto;
-}
-
-.result-sns-text {
-    text-align: right;
-    padding-right: 8px;
 }
 
 .result-sns-list {
