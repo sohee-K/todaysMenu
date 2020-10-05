@@ -1,4 +1,4 @@
-# Today's Menu
+# Today's Menu (Front-End Only)
 
 ---
 
@@ -32,4 +32,4 @@
 
 
 
-[테스트 바로가기](https://sohee-K.github.io/todaysmenu)
+[테스트 바로가기](https://sohee-K.github.io/todaysmenu_fe)
